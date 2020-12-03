@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => {
-  return <p>Footer Here!</p>
+  return <p>Social link or sumn</p>
 }
 
 export default Footer;

@@ -17,6 +17,7 @@ const Header = (props) => {
             </>
           :
             <>
+              <li><Link to={'/restaurants'}>Create New Restaurant</Link></li>
               <li><Link to={'/register'}>Register</Link></li>
               <li><Link to={'/login'}>Login</Link></li>
             </>
