@@ -1,0 +1,14 @@
+body {
+    background-image: url("cooking.gif") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: antiquewhite;   
+    height: 100vh;
+    
+}
+#restList{
+    padding-top: 7vh;
+}
+#restName{
+    padding-top: 3vh;
+}

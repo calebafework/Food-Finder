@@ -18,11 +18,10 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Food Finder</h1>
-      <div>
+      <div id="restList">
         {restaurants.map((restaurant, idx)=>{
           return <Link to={{pathname:`restaurant/${restaurant.id}`,state: restaurant }}>
-            <h2>{ restaurant.name }</h2>
+            <h2 id="restName">{ restaurant.name }</h2>
             <h3>{ restaurant.description }</h3>
             <p>{ restaurant.location }</p>
           </Link>

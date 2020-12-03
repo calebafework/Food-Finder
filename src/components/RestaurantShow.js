@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import RestaurantModel from "../models/restaurant"
+import './RestaurantShow.scss'
 
 const RestaurantShow = ({history, match}) => {
     const [restaurantInfo, setRestaurantInfo] = useState(null)
@@ -80,8 +81,14 @@ const RestaurantShow = ({history, match}) => {
     return (
         <div>
             { editMode ? editInfo : displayInfo }
-            <button onClick={ handleDelete }>Delete</button>
-            <button onClick={ editRest }>{ editMode ? "Save Changes" : "Edit" }</button>
+            { localStorage.getItem('id') ? 
+                <div>           
+                    <button onClick={ handleDelete }>Delete</button>
+                    <button onClick={ editRest }>{ editMode ? "Save Changes" : "Edit" }</button>
+                </div>    
+                    :
+                <p> Must login or register to edit restaurant </p>
+            }
         </div> 
     );
 }

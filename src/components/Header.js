@@ -8,6 +8,7 @@ const Header = (props) => {
       <div className="logo">
         <Link to={'/'}>Home!</Link>
       </div>
+      <div id="titles">FOOD FINDER</div>
       <div className="links">
         <ul>
           { props.currentUser ? 
