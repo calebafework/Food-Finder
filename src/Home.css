@@ -4,10 +4,9 @@ body {
     background-size: cover;
     color: antiquewhite;   
     height: 100vh;
-    
 }
 #restList{
-    padding-top: 7vh;
+    padding-top: 3vh;
 }
 #restName{
     padding-top: 3vh;
